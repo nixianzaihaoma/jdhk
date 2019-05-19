@@ -1,0 +1,1300 @@
+//banner部分开始
+#banner {
+    height: 525px;
+    background: orange;
+    //轮播
+    .sale_car_box {
+        float: left;
+    }
+    .carousel_box {
+        float: left;
+        margin-left: 242px;
+        height: 369px;
+        width: 726px;
+        position: relative;
+        .carousel_img {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            ul>li {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                >a>img {
+                    height: 369px;
+                    width: 726px;
+                }
+            }
+        }
+        .carousel_l {
+            position: absolute;
+            display: none;
+            top: 50%;
+            height: 85px;
+            width: 40px;
+            left: 1px;
+            transform: translateY(-50%);
+            a {
+                display: block;
+                height: 85px;
+                width: 40px;
+                background: url(../css/img/slideV2.png) 0 -143px no-repeat;
+                &:hover {
+                    background-position-y: -50px;
+                }
+            }
+        }
+        .carousel_r {
+            position: absolute;
+            display: none;
+            top: 50%;
+            height: 85px;
+            width: 40px;
+            right: 1px;
+            transform: translateY(-50%);
+            a {
+                display: block;
+                height: 85px;
+                width: 40px;
+                background: url(../css/img/slideV2.png) -52px -143px no-repeat;
+                &:hover {
+                    background-position-y: -50px;
+                }
+            }
+        }
+        .carousel_list {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            ul {
+                li {
+                    float: left;
+                    cursor: pointer;
+                    height: 12px;
+                    width: 12px;
+                    background: url(../css/img/slideV2.png) -20px 0 no-repeat;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    //轮播
+    //服务
+    .server {
+        float: left;
+        width: 242px;
+        height: 525px;
+        background: #fff;
+        position: relative;
+        .server_img {
+            position: relative;
+            overflow: hidden;
+            height: 312px;
+            ul {
+                position: absolute;
+                width: 242*3px;
+                li {
+                    float: left;
+                    width: 242px;
+                    height: 312px;
+                    background: #fff;
+                    text-align: center;
+                    p {
+                        display: block;
+                        font-size: 18px;
+                        color: #312B30;
+                        margin: 20px 0 6px;
+                    }
+                    span {
+                        display: block;
+                        color: #9A949B;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                    img {
+                        margin: 52px auto 0;
+                    }
+                }
+            }
+        }
+    }
+    //服务
+    //推送
+    .server_list {
+        position: absolute;
+        height: auto;
+        width: auto;
+        left: 50%;
+        top: 90px;
+        transform: translateX(-50%);
+        ul {
+            width: auto;
+            li {
+                float: left;
+                width: 12px;
+                height: 12px;
+                margin-right: 8px;
+                cursor: pointer;
+                background: url(../css/img/slideV2.png) -19px -23px no-repeat;
+            }
+        }
+    }
+    .sale_list {
+        margin-left: 240px;
+        width: 728px;
+        a {
+            display: block;
+            width: 182px;
+            height: 156px;
+            float: left;
+            border-right: 1px solid #ebe2eb;
+            background: #fff;
+        }
+        a:last-child {
+            border: none;
+        }
+        img {
+            display: block;
+            width: 181px;
+            height: 166px;
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+    //推送*
+}
+
+//banner部分结束
+//全球特卖 抢购 开始
+#flash_sale {
+    margin-top: 48px;
+    width: 100%;
+    .time_title {
+        height: 24px;
+        width: 160px;
+        margin: 0 auto 42px;
+        background: url(../css/img/floorTitleV2.png) no-repeat;
+    }
+    .count_down {
+        height: 60px;
+        padding-left: 20px;
+        background: #f7f5f7;
+        span {
+            line-height: 60px;
+            font-size: 18px;
+        }
+        >span:nth-child(1) {
+            margin-right: 20px;
+        }
+        .time {
+            span:nth-child(2n-1) {
+                color: #863177;
+                margin: 0 5px;
+            }
+        }
+        .timeEnd{
+            color: #863177;
+            margin: 0 5px;
+            display: none;
+        }
+    }
+    .time_con {
+        width: 100%;
+        padding: 20px 0;
+        border: 1px solid #f7f5f7;
+        border-top: 0;
+        ul {
+            margin-left: -2px;
+        }
+        li {
+            float: left;
+            width: 242px;
+            padding: 0 20px;
+            overflow: hidden;
+            border-right: 1px solid #e3e2e3;
+            a:first-child {
+                display: block;
+                margin-top: 10px;
+                img {
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+            .con_title {
+                display: block;
+                width: 100%;
+                height: 16px;
+                font-size: 12px;
+                color: black;
+                margin-top: 15px;
+                overflow: hidden;
+                &:hover {
+                    color: #863177;
+                }
+            }
+            p {
+                margin-top: 3px;
+                height: 25px;
+                span,
+                del {
+                    line-height: 25px;
+                }
+                span:nth-child(1) {
+                    font-size: 12px;
+                    color: #9a949b;
+                    margin-right: 8px;
+                }
+                span:nth-child(2) {
+                    color: #e43a3a;
+                    font-size: 20px;
+                    font-family: Arial;
+                    font-weight: 700;
+                    margin-right: 4px;
+                }
+                del {
+                    font-family: Arial;
+                    font-size: 12px;
+                    color: #9a949b;
+                }
+            }
+        }
+        li:last-child {
+            border: none;
+        }
+    }
+}
+
+//全球特卖 抢购 结束
+//全球自采开始
+#self_buy {
+    margin-top: 48px;
+    .self_title {
+        height: 24px;
+        width: 160px;
+        margin: 0 auto;
+        background: url(../css/img/floorTitleV2.png) no-repeat;
+        background-position-y: -35px;
+    }
+    .tips {
+        margin: 8px 0 20px 0;
+        text-align: center;
+        height: 17px;
+        font-size: 12px;
+        color: #863177;
+        vertical-align: middle;
+        i {
+            display: inline-block;
+            background: url(../css/img/indexV2.png) no-repeat;
+            width: 14px;
+            height: 14px;
+            margin-right: 2px;
+            vertical-align: middle;
+        }
+        i:nth-child(1) {
+            background-position: -231px -91px;
+        }
+        i:nth-child(3) {
+            background-position: -231px -109px;
+        }
+        i:nth-child(5) {
+            background-position: -231px -126px;
+        }
+        i:nth-child(7) {
+            background-position: -231px -141px;
+        }
+        span {
+            vertical-align: middle;
+        }
+    }
+    .tab_lis {
+        li {
+            float: left;
+            height: 60px;
+            width: 16.6666666%;
+            padding: 20px 0;
+            background: #f7f5f7;
+            cursor: pointer;
+            position: relative;
+            p {
+                height: 20px;
+                text-align: center;
+                border-right: 1px solid #d5d5d5;
+                span {
+                    display: inline-block;
+                    height: 20px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: #312b30;
+                    vertical-align: middle;
+                }
+            }
+        }
+        li:last-child {
+            p {
+                border-right: 0;
+            }
+        }
+        .pitch {
+            background: black;
+            p {
+                border-right: 0;
+                span {
+                    margin-top: -3px;
+                    color: white;
+                }
+                i {
+                    display: inline-block;
+                    height: 19px;
+                    width: 43px;
+                    vertical-align: middle;
+                    background: url(../css/img/top8.png);
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -6px;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+                border-width: 6px;
+                border-style: solid;
+                border-color: transparent transparent #fff transparent;
+            }
+        }
+    }
+    .bix_tab_box {
+        position: relative;
+        height: 523px;
+    }
+    .tab_con {
+        margin-top: 1px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        //      display: none;
+        .con_box {
+            width: 50%;
+            overflow: hidden;
+            float: left;
+            position: relative;
+            >a {
+                display: block;
+                width: 100%;
+                height: 260px;
+                img {
+                    display: block;
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            .details {
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                width: 340px;
+                height: 165px;
+                h5 {
+                    width: 100%;
+                    height: 18px;
+                    img {
+                        display: inline-block;
+                        height: 15px;
+                        width: 22px;
+                        margin: -1px 10px 0 0;
+                    }
+                    span {
+                        display: inline-block;
+                        height: 12px;
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #312b30;
+                        padding-right: 8px;
+                        border-right: 2px solid #e6dad6;
+                    }
+                }
+                .con_title {
+                    font-size: 18px;
+                    height: 18px;
+                    color: #312b30;
+                    line-height: 18px;
+                    margin-top: 8px;
+                    overflow: hidden;
+                    word-spacing: normal;
+                }
+                .evaluate {
+                    margin-top: 19px;
+                }
+                .star {
+                    display: inline-block;
+                    height: 17px;
+                    width: 22px;
+                    background: url(../css/img/istarV2.png);
+                    //                  vertical-align: middle;
+                }
+                .star:nth-child(n+2) {
+                    margin-left: -5px;
+                }
+            }
+        }
+        .describe {
+            color: #c2b9bb;
+            margin-top: 5px;
+            font-size: 12px;
+            height: 36px;
+            line-height: 18px;
+            overflow: hidden;
+        }
+        .price {
+            margin-top: 16px;
+            font-size: 0;
+            font-family: Arial;
+            span {
+                display: inline-block;
+                height: 26px;
+                line-height: 26px;
+                font-size: 26px;
+                font-weight: 700;
+                color: #e43a3a;
+                margin-right: 4px;
+                //                  vertical-align: middle;
+            }
+            del {
+                height: 26px;
+                line-height: 34px;
+                font-size: 12px;
+                color: #9a949b;
+                vertical-align: top;
+            }
+        }
+        .cost {
+            line-height: 22px;
+            vertical-align: middle;
+            font-size: 12px;
+            color: #000000;
+            span {
+                margin-left: -2px;
+                color: #646fb0;
+                font-weight: 900;
+                margin-right: 2px;
+            }
+        }
+        .sm_box {
+            border: 1px solid #f7f5f7;
+            border-top: 0;
+        }
+        .sm_con {
+            position: relative;
+            float: left;
+            width: 201px;
+            padding: 20px;
+            cursor: pointer;
+            >a {
+                display: block;
+                height: 150px;
+                width: 150px;
+                overflow: hidden;
+                margin: 0 auto;
+                img {
+                    display: block;
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+            .sm_tit {
+                width: 160px;
+                height: 16px;
+                line-height: 16px;
+                overflow: hidden;
+                color: #312b30;
+                margin-top: 7px;
+                white-space: nowrap;
+                font-size: 12px;
+            }
+            .sm_pic {
+                font-weight: 700;
+                font-size: 20px;
+                color: #e43a3a;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                margin-top: 7px;
+            }
+            .cost {
+                margin-top: 2px;
+                text-align: center;
+            }
+            .top {
+                position: absolute;
+                background: url(../css/img/indexV2.png) -247px 0 no-repeat;
+                width: 40px;
+                height: 40px;
+                top: 20px;
+                left: 20px;
+                text-align: center;
+                line-height: 56px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+//全球自采结束
+//全球名店 开始
+#famous {
+    .f_title {
+        background-position: 0 -108px;
+        margin-bottom: 42px;
+    }
+    .fl_top {
+        position: relative;
+        height: 399px;
+        width: 403px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 399px;
+            width: 403px;
+        }
+        p {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 200px;
+            margin-left: -100px;
+            font-size: 0;
+            z-index: 10;
+            span {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                font-size: 12px;
+                color: #312b30;
+                background: #fff;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                cursor: pointer;
+            }
+            .curr {
+                background: #312b30;
+                color: #fff;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -16px;
+                    left: 50%;
+                    margin-left: -8px;
+                    width: 0;
+                    height: 0;
+                    overflow: hidden;
+                    border-width: 8px;
+                    border-style: solid;
+                    border-color: transparent transparent #312b30;
+                }
+            }
+        }
+    }
+    .fl_bottom {
+        width: 403px;
+        height: 216px;
+        margin-top: -15px;
+    }
+    .f_r {
+        background: #f7f5f7;
+        padding: 3px 0;
+        width: 806px;
+        li {
+            float: left;
+            width: 403px;
+            height: 198px;
+            a {
+                float: left;
+                width: 180px;
+                height: 197px;
+            }
+            .fr_logo {
+                height: 32px;
+                width: 80px;
+                margin: 40px 0 0 20px;
+                ;
+            }
+            .txt {
+                display: block;
+                font-size: 16px;
+                width: 150px;
+                height: 16px;
+                line-height: 16px;
+                color: #e43a3a;
+                margin: 7px 0 0 30px;
+                overflow: hidden;
+            }
+            .tips {
+                display: inline-block;
+                position: relative;
+                height: 21px;
+                line-height: 21px;
+                background: #312b30;
+                padding: 0 19px 0 30px;
+                margin-top: 8px;
+                color: #fff;
+                opacity: .9;
+                i {
+                    position: absolute;
+                    background: url(../css/img/indexV2.png) -243px -162px no-repeat;
+                    width: 11px;
+                    height: 21px;
+                    top: 0;
+                    right: -11px;
+                }
+            }
+            .lis_img {
+                margin-top: 20px;
+                width: 203px;
+                height: 160px;
+                overflow: hidden;
+                .hid {
+                    width: 220px;
+                    height: 160px;
+                    a {
+                        display: block;
+                        float: left;
+                        width: 100px;
+                        height: 160px;
+                        margin-right: 3px;
+                        background: #fff;
+                        padding-top: 10px;
+                        img {
+                            height: 100px;
+                            width: 100px;
+                        }
+                        &:hover .wire {
+                            width: 40px;
+                        }
+                        .price {
+                            text-align: center;
+                            display: block;
+                            font-size: 16px;
+                            font-family: arial;
+                            color: #e43a3a;
+                            margin: 0 auto;
+                        }
+                    }
+                    .wire {
+                        display: block;
+                        position: relative;
+                        z-index: 1;
+                        width: 20px;
+                        height: 3px;
+                        background: #f7f5f7;
+                        margin: 14px auto 8px;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+        li:nth-child(2),
+        li:nth-child(3),
+        li:nth-child(6) {
+            background: #fff;
+            .hid {
+                a {
+                    background: #f7f5f7;
+                }
+            }
+        }
+    }
+}
+
+//全球名店 结束
+//吃遍全球开始
+#eat {
+    .e_title {
+        background-position: 0 -216px;
+    }
+    .sm_tips {
+        margin-top: 10px;
+        text-align: center;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        span {
+            display: inline-block;
+            font-size: 12px;
+            height: 20px;
+            padding: 0 13px;
+            margin-right: 8px;
+            background: #f7f5f7;
+            border-radius: 10px;
+            a {
+                color: #312b30;
+                &:hover {
+                    color: #863177;
+                }
+            }
+        }
+    }
+    .el_top {
+        border-right: 1px solid #e8e7e8;
+    }
+    .sm_l {
+        display: block;
+        height: 270px;
+        width: 201px;
+    }
+    .el_bottom {
+        height: 287px;
+    }
+    .con_box {
+        width: 202px;
+        height: 287px;
+        border-right: 1px solid #e8e7e8;
+        cursor: pointer;
+        position: relative;
+        .title {
+            text-align: center;
+            height: 30px;
+            background: #f7f5f7;
+            img {
+                width: 20px;
+                height: 13px;
+                margin: 9px 4px 0 0;
+                vertical-align: top;
+            }
+            span {
+                display: inline-block;
+                font-size: 14px;
+                color: #312b30;
+                max-width: 74px;
+                line-height: 30px;
+                height: 25px;
+                overflow: hidden;
+                vertical-align: top;
+            }
+        }
+        .img_box {
+            display: block;
+            width: 202px;
+            height: 179px;
+            padding: 20px 26px 9px;
+            overflow: hidden;
+            img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .bt_title {
+            font-size: 12px;
+            color: #312b30;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            overflow: hidden;
+            padding: 0 17px;
+        }
+        .bt_price {
+            font-size: 20px;
+            color: #e43a3a;
+            text-align: center;
+            font-family: Arial;
+        }
+        .top {
+            position: absolute;
+            background: url(../css/img/indexV2.png) -247px 0 no-repeat;
+            width: 40px;
+            height: 40px;
+            top: 50px;
+            left: 20px;
+            text-align: center;
+            line-height: 56px;
+            font-size: 18px;
+        }
+    }
+    .e_r {
+        width: 198px;
+        .title {
+            height: 40px;
+            background: #f7f5f7;
+            text-align: center;
+            font-size: 18px;
+            color: #312b30;
+            line-height: 40px;
+        }
+        .option {
+            height: 25px;
+            margin-top: 5px;
+            text-align: center;
+            span {
+                display: inline-block;
+                cursor: pointer;
+                height: 27px;
+                line-height: 25px;
+                font-size: 12px;
+                text-align: center;
+                word-break: break-all;
+                margin: 0 11px;
+                position: relative;
+            }
+            .chose {
+                border-bottom: 2px solid #863177;
+                color: #863177;
+                &:after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 4px 3px 0 3px;
+                    border-color: #863177 transparent transparent transparent;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    margin-left: -3px;
+                }
+            }
+        }
+        .r_conten {
+            height: 472px;
+            width: 100%;
+            position: relative;
+            .item {
+                height: 472px;
+                width: 100%;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                a {
+                    display: block;
+                    height: 225px;
+                    width: 180px;
+                    margin: 10px auto 24px;
+                    border-bottom: 1px dashed #e3e2e3;
+                    position: relative;
+                    img {
+                        height: 160px;
+                        width: 180px;
+                    }
+                    p {
+                        font-size: 12px;
+                        color: #312b30;
+                        width: 170px;
+                        height: 40px;
+                        line-height: 20px;
+                        overflow: hidden;
+                        word-break: break-all;
+                        text-align: left;
+                        margin-top: 5px;
+                    }
+                    i {
+                        display: block;
+                        position: absolute;
+                        background: url(../css/img/indexV2.png) no-repeat;
+                    }
+                    .quotel {
+                        top: 18px;
+                        left: 8px;
+                        width: 26px;
+                        height: 26px;
+                        background-position: -152px -189px;
+                    }
+                    .quoter {
+                        background-position: -186px -189px;
+                        right: 0;
+                        bottom: 20px;
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .e_bt {
+        height: 75px;
+        border-top: 1px solid #e3e2e3;
+        border-bottom: 2px solid #e3e2e3;
+        clear: both;
+        a {
+            display: inline-block;
+            height: 72px;
+            width: 151px;
+            position: relative;
+            float: left;
+            span {
+                position: absolute;
+                width: 80px;
+                height: 32px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                color: #000;
+                text-align: center;
+                line-height: 32px;
+                overflow: hidden;
+                opacity: 0;
+            }
+            img {
+                width: 80px;
+                height: 32px;
+                margin: 20px 35px;
+            }
+            &:hover>span {
+                opacity: 1;
+            }
+            &:hover>img {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+//吃遍全球结束
+//猜你喜欢开始
+#like {
+    .b_title {
+        background-position: 0 -539px;
+        margin-bottom: 42px;
+    }
+    .liek_con {
+        height: 354px;
+        border-bottom: 2px solid #f5f5f5;
+        .like_items {
+            height: 235px;
+            margin: 0 20px 16px;
+            overflow: hidden;
+            position: relative;
+            .like_lis {
+                position: absolute;
+                width: 205*12px;
+            }
+            li {
+                float: left;
+                width: 150px;
+                margin-right: 55px;
+                img {
+                    height: 150px;
+                    width: 150px;
+                }
+                .like_title {
+                    display: block;
+                    color: #312b30;
+                    width: 150px;
+                    height: 32px;
+                    line-height: 16px;
+                    overflow: hidden;
+                    word-break: break-all;
+                    font-size: 12px;
+                }
+                .like_price {
+                    margin: ;
+                    font-weight: 700;
+                    color: #e43a3a;
+                    font-size: 20px;
+                    font-family: Arial;
+                    margin-top: 14px;
+                }
+            }
+        }
+        .pro_bar {
+            margin-left: 20px;
+            .act_l {
+                float: left;
+                display: inline-block;
+                background: url(../css/img/indexV2.png) -70px 0 no-repeat;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                &:hover {
+                    background-position-x: -139px;
+                }
+            }
+            .act_r {
+                float: left;
+                display: inline-block;
+                background: url(../css/img/indexV2.png) -106px 0 no-repeat;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                &:hover {
+                    background-position-x: -175px;
+                }
+            }
+            .bar {
+                position: relative;
+                display: block;
+                float: left;
+                height: 2px;
+                background: #f7f5f7;
+                border-radius: 100px;
+                width: 1090px;
+                margin: 13px 5px 0 5px;
+                cursor: pointer;
+                .lt_bar {
+                    width: 239px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 3px;
+                    background: #000;
+                }
+            }
+        }
+    
+    }
+    
+    .zone{
+        height: 160px;
+        a{
+            display: block;
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            img{
+                height: 130px;
+                width: 160px;
+            }
+            .txt{
+                line-height: 20px;
+                font-size: 18px;
+    color: #312b30;
+    display: block;
+    position: absolute;
+    top: 88px;
+    left: 46px;
+    width: 72px;
+    height: 20px;
+    overflow: hidden;
+            }
+        }
+    }
+}
+
+//猜你喜欢结束
+
+//品质保障开始
+#guarantee{
+    height: 407px;
+    background: #f7f5f7;
+    height: 407px;
+    text-align: center;
+    min-width: 1210px;
+    overflow: hidden;
+    margin-top: 60px;
+    .guarantee{
+         overflow: hidden;
+    }
+    .gra_title{
+        margin-top: 38px;
+        text-align: center;
+        .txt{
+             font-size: 24px;
+    color: #312b30;
+    line-height: 24px;
+    margin-right: 8px;
+        }
+    }
+    .content{
+        margin-top: 37px;
+        height: 234px;
+        .box{
+            height: 100%;
+          width: 110%; 
+          a{
+              display: block;
+              float: left;
+              height: 234px;
+              width: 206px;
+              margin-right: 45px;
+              position: relative;
+              background: #FFF;
+              img:nth-child(1){
+                  height: 200px;
+                  width: 200px;
+              }
+              img:nth-child(2){
+                  position: absolute;
+                      top: -14px;
+    right: -15px;
+    width: 27px;
+    height: 201px;
+              }
+              span{
+                      display: block;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #9a949b;
+    height: 18px;
+    overflow: hidden;
+              }
+          } 
+        }
+    }
+    
+    .more{
+        text-align: center;
+        height: 18px;
+        line-height: 18px;
+        margin-top: 21px;
+       a{
+               font-size: 12px;
+    color: #312b30;
+    &:hover{
+        color: #863177;
+    }
+       }
+    }
+}
+   
+
+//品质保障结束
+
+
+//楼层跳跃开始
+#floor{
+    position: fixed;
+        right: 72.5px;
+        width: 62px;
+    border: 1px solid #312b30;
+    border-top: 0;
+    z-index: 12;
+    position: fixed;
+    bottom: 50px;
+    display: none;
+    a{
+            background: #fff;
+    display: block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+    border-top: 1px solid #312b30;
+    font-size: 12px;
+    &:hover{
+            color: #863177;
+    background: #ebe2eb;
+    }
+    
+    }
+    .cart{
+            height: 40px;
+            i{
+                display: block;
+                   width: 20px;
+    height: 21px;
+    margin: 10px 0 0 22px;
+                background:url(../css/img/gotop.png) 0 0 no-repeat;
+                
+            }
+            &:hover >i{
+                background-position: 0 -24px;
+            }
+    }
+    .back_top{
+            background: #312b30;
+    display: block;
+    width: 60px;
+    height: 40px;
+    padding: 0;
+    i{
+        display: block;
+    background: url(../css/img/gotop.png) 0 -49px no-repeat;
+    width: 16px;
+    height: 10px;
+    margin: 15px 0 0 22px;
+    }
+    &:hover{
+            color: #fff;
+    background: #863177;
+    }
+    
+    }
+    .touch{
+        color: #863177;
+    background: #ebe2eb;
+    }
+
+}
+
+//楼层跳跃结束
+
+
+//外边距48px
+.mt48 {
+    margin-top: 48px;
+}
+
+//大标题
+.b_title {
+    height: 24px;
+    width: 160px;
+    margin: 0 auto;
+    background: url(../css/img/floorTitleV2.png) no-repeat;
+}
+
+//向左移动动画
+.moveL>img {
+    transition: all .2s linear;
+}
+
+.moveL:hover>img {
+    transform: translateX(-5px);
+}
+
+//移入移出动画
+.moveTR {
+    >img {
+        animation: arcr .3s ease;
+    }
+}
+
+.moveRT {
+    >img {
+        animation: arct .3s ease;
+    }
+}
+
+@keyframes arct {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, 10px);
+    }
+    50% {
+        transform: translate(20px, 20px);
+    }
+    75% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes arcr {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, 20px);
+    }
+    50% {
+        transform: translate(20px, 20px);
+    }
+    75% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

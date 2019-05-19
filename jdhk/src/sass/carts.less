@@ -1,0 +1,272 @@
+#logo {
+    .logo {
+        h1 {
+            width: 240px;
+            height: 48px;
+            color: #666;
+            text-indent: -20000px;
+            background: url(/jdhk/src/css/img/logo.png) no-repeat;
+        }
+    }
+}
+
+.all {
+    margin-top: 10px;
+    .allshop {
+        border-bottom: 2px solid #e4393c;
+        float: left;
+        color: #e4393c;
+        font-weight: 700;
+        font-size: 16px;
+        height: 30px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 0 10px;
+        cursor: pointer;
+        margin: 5px 30px 0 0;
+    }
+}
+
+.carts_header {
+    height: 43px;
+    line-height: 32px;
+    margin: 0 0 10px;
+    padding: 5px 0;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    >div {
+        float: left;
+    }
+    .check_all {
+        height: 25px;
+        line-height: 18px;
+        padding-top: 7px;
+        width: 133px;
+        padding-left: 11px;
+    }
+    .commondity {
+        width: 268px;
+    }
+    .category {
+        width: 120px;
+        height: 32px;
+        padding: 0 20px;
+    }
+    .unit_price {
+        width: 160px;
+        padding-right: 40px;
+        text-align: right;
+    }
+    .num {
+        width: 80px;
+        text-align: center;
+    }
+    .subtotal {
+        width: 140px;
+        padding-right: 40px;
+        text-align: right;
+    }
+    .operation {
+        width: 75px;
+    }
+}
+
+#content {
+    .title {
+        height: 30px;
+        line-height: 30px;
+        padding-left: 11px;
+        font-weight: 700;
+        border-bottom:2px solid #c5c5c5 ;
+        >div {
+            float: left;
+        }
+        .lis_check_all {
+            margin-right: 5px;
+        }
+        .list_title {
+            cursor: pointer;
+            &:hover {
+                color: #E4393C;
+            }
+        }
+    }
+    .lis {
+        border-style: solid;
+        border-width: 0 1px 1px 1px;
+        border: 1px solid #c5c5c5;
+        background: #fff;
+        .lis_content {
+            line-height: 20px;
+            position: relative;
+            padding: 0 10px 1px 40px;
+            background: #fff;
+            
+            .indent {
+                padding: 15px 0 10px 0;
+                >div {
+                    float: left;
+                }
+                .img_box {
+                    height: 80px;
+                    width: 80px;
+                    margin-right: 10px;
+                    img {
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+                .con_title {
+                    width: 268px;
+                    height: 40px;
+                    line-height: 20px;
+                    overflow: hidden;
+                    margin-right: 160px;
+                    &:hover {
+                        color: #e4393c;
+                    }
+                }
+                .price {
+                    width: 120px;
+                    font-family: verdana;
+                    text-align: right;
+                    padding: 0 40px 10px 0;
+                }
+                .quantity {
+                    width: 80px;
+                    border: 1px solid #cacbcb;
+                    border-right: 0;
+                    >input {
+                        float: left;
+                        border-right: 1px solid #cacbcb;
+                        height: 22px;
+                        line-height: 18px;
+                        padding: 1px 0;
+                        width: 16px;
+                        text-align: center;
+                        color: #666;
+                        margin: 0;
+                        background: #fff;
+                    }
+                    .input_num {
+                        width: 46px;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+                .total {
+                    width: 140px;
+                    font-family: verdana;
+                    text-align: right;
+                    padding: 0 40px 10px 0;
+                    color: #333;
+                    font-weight: 700;
+                }
+                .del {
+                    color: #666;
+                    &:hover {
+                        color: #e4393c;
+                    }
+                }
+            }
+            .check {
+                position: absolute;
+                z-index: 3;
+                left: 10px;
+                top: 0;
+                width: 30px;
+                min-height: 10px;
+                padding: 15px 0 10px;
+            }
+        }
+        .lis_content:nth-child(1) {
+            border: none;
+        }
+        .lisSelect {
+            background: #fff4e8;
+        }
+    }
+}
+
+#account {
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    margin-top: 35px;
+    .account {
+        height: 52px;
+        >div {
+            float: left;
+            height: 100%;
+        }
+    }
+    .bot_all {
+        background: #fff;
+        float: left;
+        height: 100%;
+        line-height: 18px;
+        padding: 16px 0 16px 9px;
+        white-space: nowrap;
+    }
+    .del_bot {
+        margin-left: 25px;
+        color: #666;
+        line-height: 50px;
+        cursor: pointer;
+        &:hover {
+            color: #e4393c;
+        }
+    }
+    .account .payment {
+        float: right;
+        >div,
+        a {
+            float: left;
+        }
+        .chosenum {
+            color: #999;
+            height: 44px;
+            line-height: 20px;
+            margin: 7px 0 0;
+            cursor: pointer;
+            span {
+                color: #e4393c;
+                font-family: verdana;
+                font-weight: 700;
+                margin: 0 3px;
+            }
+        }
+        .sum {
+            text-align: right;
+            color: #999;
+            line-height: 20px;
+            margin: 7px 20px 0 10px;
+            span {
+                font-size: 16px;
+                color: #e4393c;
+                font-weight: 700;
+            }
+        }
+        .pay {
+            display: block;
+            position: relative;
+            width: 96px;
+            height: 52px;
+            line-height: 52px;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            background: #e54346;
+            overflow: hidden;
+        }
+    }
+}
+
+.con {
+    width: 990px;
+}
+#foot{
+    .con{
+        width: 1210px;
+    }
+}

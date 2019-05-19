@@ -1,0 +1,625 @@
+#shop {
+    padding: 25px 0 5px;
+    border-bottom: 2px solid #000;
+    .shop {
+        line-height: 24px;
+        height: 24px;
+    }
+    .shop_box {
+        float: right;
+        i {
+            float: left;
+            margin: 4px 5px 0 0;
+            width: 15px;
+            height: 14px;
+            background-image: url(/jdhk/src/css/img/det_desprite.png);
+            background-position: -50px 0;
+        }
+        a {
+            float: left;
+            height: 24px;
+            line-height: 22px;
+            color: #000;
+            display: block;
+            font-weight: 900;
+            &:hover {
+                color: #FF3E68;
+            }
+        }
+        .star {
+            float: left;
+            margin: 3px 0 0 15px;
+            //          padding-top: 2px;
+        }
+        .starbg {
+            width: 94px;
+            height: 16px;
+            border-radius: 8px;
+            background: #e6e6e6;
+            overflow: hidden;
+        }
+        .stargrey {
+            position: relative;
+            width: 80px;
+            height: 14px;
+            margin: 1px 0 0 7px;
+            background: url(/jdhk/src/css/img/star-gray.png) left center repeat-x;
+        }
+        .starlinght {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 14px;
+            background: url(/jdhk/src/css/img/star-light.png) left center repeat-x;
+            width: 72px;
+        }
+        .line {
+            float: left;
+            width: 1px;
+            height: 12px;
+            margin: 7px 15px 0;
+            padding: 0;
+            background: #dcdcdc;
+            overflow: hidden;
+        }
+        .service {
+            cursor: pointer;
+            float: left;
+            margin-right: 10px;
+            white-space: nowrap;
+            font-size: 12px;
+            i {
+                width: 16px;
+                height: 16px;
+                background-image: url(/jdhk/src/css/img/det_desprite.png);
+                background-position: 0 -34px;
+                vertical-align: top;
+                margin-top: 5px;
+            }
+            &:hover {
+                color: #FF3E68;
+            }
+        }
+        .attention {
+            float: left;
+            width: 82px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            margin-left: 10px;
+            cursor: pointer;
+            i {
+                display: inline-block;
+                overflow: hidden;
+                width: 16px;
+                height: 16px;
+                background-image: url(/jdhk/src/css/img/det_desprite.png);
+                background-position: -34px 0;
+                vertical-align: top;
+                margin-top: 4px;
+            }
+            &:hover span {
+                color: #FF3E68;
+            }
+        }
+    }
+}
+
+#content {
+    position: relative;
+    margin: 30px 0;
+    .boxleft {
+        width: 452px;
+        float: left;
+        position: relative;
+        .imgBox {
+            border: 1px solid #eee;
+            margin-bottom: 10px;
+            position: relative;
+            cursor: move;
+            img {
+                height: 450px;
+                width: 450px;
+            }
+            
+           
+        }
+         #showing{
+                display: none;
+                position: absolute;
+                height: 565px;
+                width: 565px;
+                top: 0;
+                right:-128%;
+                z-index: 999;
+                background-position:0px 0px;
+                background-size:831px 831px  ;
+//              background: #000;
+            }
+        .imglis {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+            .ulBox {
+                width: 404px;
+                margin: 0 auto;
+                overflow: hidden;
+                li {
+                    float: left;
+                    margin: 0 3px;
+                    opacity: .5;
+                    img {
+                        width: 75px;
+                        height: 75px;
+                    }
+                }
+                .opc{
+                    opacity: 1;
+                }
+            }
+        }
+        .share {
+            font-size: 12px;
+            a {
+                color: #000;
+                &:hover {
+                    color: #ff3e68;
+                }
+            }
+            .shareleft {
+                float: left;
+                a {
+                    margin-left: 10px;
+                }
+                i {
+                    width: 11px;
+                    height: 12px;
+                    margin-right: 5px;
+                    vertical-align: -1px;
+                    display: inline-block;
+                    background-image: url(/jdhk/src/css/img/__sprite.png)
+                }
+                a:nth-child(1) i {
+                    background-position: -40px -24px;
+                    &:hover {
+                        background-position: -51px -24px;
+                    }
+                }
+                a:nth-child(2) i {
+                    width: 14px;
+                    background-position: 0px -24px;
+                }
+                a:nth-child(1) {
+                    &:hover>i {
+                        background-position: -51px -24px;
+                    }
+                }
+                a:nth-child(2) {
+                    &:hover>i {
+                        background-position: -14px -24px;
+                    }
+                }
+            }
+            .shareright {
+                float: right;
+            }
+        }
+    }
+    .boxcenter {
+        width: 525px;
+        float: left;
+        margin-left: 20px;
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+            line-height: 24px;
+            margin-top: 20px;
+            margin-bottom: 7px;
+        }
+        .item {
+            margin-bottom: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #d91f20;
+        }
+        .priceBox {
+            padding-bottom: 5px;
+            .summary {
+                padding: 20px 20px 8px;
+                margin-bottom: 10px;
+                background: #f8f8f8;
+                color: #000;
+            }
+            p {
+                margin-bottom: 14px;
+                span:nth-child(1) {
+                    color: #939393;
+                    font-size: 12px;
+                    margin-right: 15px;
+                    vertical-align: top;
+                }
+            }
+            .price {
+                b {
+                    font-size: 26px;
+                    color: #dc1d20;
+                }
+            }
+            .discounts {
+                .text {
+                    padding: 0 10px;
+                    color: #df3033;
+                    height: 16px;
+                    padding-left: 2px;
+                    line-height: 15px;
+                    text-align: center;
+                    border: 1px solid #df3033;
+                    background: #ffdedf;
+                    font-size: 12px;
+                    white-space: nowrap;
+                    margin-right: 13px;
+                    cursor: pointer;
+                    &:hover {
+                        background: #f4edee;
+                    }
+                }
+            }
+        }
+        .repertory {
+            height: 24px;
+            padding-left: 20px;
+            span {
+                margin-right: 25px;
+            }
+        }
+        .addcar {
+            margin-bottom: 20px;
+            padding: 40px 10px 0 0;
+            .input_num {
+                width: 49px;
+                height: 48px;
+                //              overflow: hidden;
+                border: 1px solid #ccc;
+                position: relative;
+                margin-right: 10px;
+                float: left;
+                .number {
+                    float: left;
+                    display: block;
+                    width: 31px;
+                    height: 44px;
+                    line-height: 42px;
+                    //  position: absolute;
+                    //  top: 1px;
+                    //  left: 0;
+                    border: none;
+                    border: 0;
+                    text-align: center;
+                }
+                .add {
+                    float: right;
+                    height: 100%;
+                    width: 15px;
+                    //                  margin-right:-1px ;
+                    input {
+                        height: 50%;
+                        width: 16px;
+                        border: 1px solid #ccc;
+                        background: #f1f1f1;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .car {
+                margin-right: 10px;
+                float: left;
+                color: #fff;
+                height: 50px;
+                line-height: 50px;
+                padding: 0 50px;
+                font-size: 18px;
+                font-weight: 700;
+                background-color: #ff3e68;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+            .car_disable {
+                border: 1px solid #ebebeb;
+                color: #ccc;
+                background-color: #f7f7f7;
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+.boxright {
+    width: 170px;
+    padding: 18px 20px 16px;
+    border: 1px solid #dadada;
+    float: right;
+    .extra {
+        position: relative;
+        line-height: 16px;
+        font-size: 12px;
+        color: #000;
+        font-weight: 400;
+        text-align: center;
+        .extra_title {
+            font-size: 14px;
+            background: #fff;
+            padding: 0 10px;
+            line-height: 16px;
+            font-weight: 900;
+        }
+        .lis {
+            padding-top: 10px;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            width: 128px;
+            height: 600px;
+            ul {
+                position: absolute;
+                top: 0;
+                left: 0;
+//              height: 2000px;
+                li {
+                    position: relative;
+                    padding: 10px 0;
+                    img {
+                        height: 128px;
+                        width: 128px;
+                    }
+                    p {
+                        padding-top: 16px;
+                        height: 52px;
+                        overflow: hidden;
+                        font-size: 12px;
+                        line-height: 18px;
+                        cursor: pointer;
+                    }
+                    .priceright {
+                        position: absolute;
+                        left: 0;
+                        top: 60%;
+                        line-height: 20px;
+                        background: rgba(255, 255, 255, .9);
+                        padding: 0 10px;
+                        color: #000;
+                    }
+                    &:hover .priceright,
+                    &:hover p {
+                        color: #dc1d20;
+                    }
+                }
+            }
+        }
+        .more {
+            padding-top: 15px;
+            text-align: center;
+            clear: both;
+            .up,
+            .below {
+                display: inline-block;
+                background: url(/jdhk/src/css/img/more_sprite.png);
+                width: 28px;
+                height: 15px;
+                //                          float: left;
+                margin: 0 10px;
+            }
+            .up {
+                background-position: -28px 0;
+            }
+        }
+    }
+}
+
+#referrer {
+    margin-top: 20px;
+    .referrer {
+        .ref_title {
+            background: #F8F8F8;
+            height: 38px;
+            font-size: 14px;
+            span {
+                border-top: 2px solid #000;
+                border-left: 1px solid #dadada;
+                border-right: 1px solid #dadada;
+                padding: 8px 25px 10px;
+                background: #fff;
+                color: #000;
+                cursor: default;
+                float: left;
+            }
+        }
+        .ref_content {
+            padding: 20px 0 12px 15px;
+            border: 1px solid #dadada;
+            border-top: none;
+            li {
+                width: 160px;
+                float: left;
+                margin: 0 18px;
+                img {
+                    width: 160px;
+                    height: 160px;
+                }
+                p {
+                    height: 38px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    &:hover {
+                        color: #C81623;
+                    }
+                }
+                b {
+                    color: #e4393c;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+#pre,
+#next {
+    display: block;
+    width: 16px;
+    height: 75px;
+    color: #999;
+    line-height: 75px;
+    border: 1px solid #eee;
+    background: #f8f8f8;
+    position: absolute;
+    cursor: pointer;
+}
+
+#next {
+    top: 0;
+    right: 0;
+}
+
+#pre {
+    top: 0;
+    left: 0;
+}
+
+#shade {
+    position: absolute;
+    display: none;
+    height: 68%;
+    width: 68%;
+    visibility: visible;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    border: 1px solid #aaa;
+    background: 50% top no-repeat #FEDE4F;
+    opacity: .5;
+}
+
+.toolbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    .fixtop {
+        position: absolute;
+        top: 35%;
+        left: -29px;
+        width: 35px;
+    }
+    .fixbottom {
+        position: absolute;
+        bottom: 1px;
+        left: -29px;
+        width: 35px;
+    }
+    a {
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 1px;
+        cursor: pointer;
+        background-color: #7a6e6e;
+        &:hover i,
+        &:hover em {
+            background-color: #ff3e68;
+        }
+        i {
+            display: block;
+            width: 34px;
+            height: 35px;
+            position: relative;
+            z-index: 66;
+            background-color: #7a6e6e;
+        }
+        em {
+            width: 62px;
+            height: 35px;
+            line-height: 35px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 微软雅黑;
+            position: absolute;
+            z-index: 1;
+            left: 35px;
+            top: 0px;
+            background-color: rgb(122, 110, 110);
+            border-radius: 3px 0px 0px 3px;
+            transition: left 0.3s ease-in-out 0.1s;
+        }
+        &:hover em {
+            left: -62px;
+        }
+    }
+    .carts {
+        i {
+            background: url(/jdhk/src/css/img/sprite-02-cart.png) no-repeat center;
+        }
+    }
+    .ticket {
+        i {
+            background: url(/jdhk/src/css/img/toolbars.png) -190px -100px no-repeat;
+        }
+    }
+    .trigger {
+        i {
+            background: url(/jdhk/src/css/img/communication-icon.png) no-repeat center;
+        }
+    }
+    .qrcode {
+        i {
+            background: url(../css/img/qrcode.gif) no-repeat center;
+        }
+        .jdcode {
+            display: none;
+            padding: 12px;
+            border-radius: 5px;
+            position: absolute;
+            left: -145px;
+            top: -152px;
+            background: #ff3e68;
+            color: #fff;
+            font-size: 14px;
+            span {
+                position: absolute;
+                border: 1px solid #fff;
+                color: #fff;
+                background: #ff3e68;
+                border-radius: 10px;
+                right: -5px;
+                top: -5px;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                font: 15px/15px simsun;
+            }
+            p {
+                color: #fff;
+                font-size: 14px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.feedback {
+    i {
+        background: url(/jdhk/src/css/img/toolbars.png) -50px -300px no-repeat;
+    }
+}
+
+.backtop {
+    i {
+        background: url(/jdhk/src/css/img/toolbars.png) -50px -250px no-repeat;
+    }
+}

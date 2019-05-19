@@ -1,0 +1,377 @@
+#header {
+    height: 80px;
+}
+
+#header h1 {
+    float: left;
+    height: 60px;
+    width: 300px;
+    margin: 10px 0;
+}
+
+#header h1 a {
+    display: block;
+    float: left;
+    height: 60px;
+    width: 170px;
+    overflow: hidden;
+    text-indent: -9000px;
+    background: url(img/login_logo.png) no-repeat;
+    background-size: 170px 60px;
+}
+
+#header h1 i {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 110px;
+    margin: 20px 0 0 20px;
+    background: url(../css/img/l-icon.png);
+}
+
+.header>a {
+    display: block;
+    float: right;
+    width: auto;
+    height: auto;
+    color: #999;
+    font-size: 12px;
+    margin-top: 40px;
+    i {
+        display: block;
+        float: left;
+        width: 18px;
+        height: 14px;
+        margin: 3px 5px;
+        ;
+        background: url(../css/img/q-icon.png);
+    }
+    &:hover {
+        color: #E4393C;
+        text-decoration: underline;
+    }
+}
+
+#tips {
+    background: #fff8f0;
+}
+
+.tips {
+    background: #fff8f0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+        background: url(../css/img/icon-tips.png);
+    }
+    span {
+        vertical-align: middle;
+        color: #999;
+        font-size: 12px;
+        display: inline-block;
+    }
+}
+
+#logo {
+    height: 475px;
+    background: #d7b99f;
+    .logo {
+        position: relative;
+        height: 100%;
+        background: url(../css/img/logoImg.jpg) no-repeat;
+        .from {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 346px;
+            height: auto;
+            background: #fff;
+            .type {
+                height: 55px;
+                border-bottom: 1px solid #f4f4f4;
+                background: #fff;
+                text-align: center;
+                line-height: 55px;
+                a {
+                    font-weight: 700;
+                    color: #e4393c;
+                    font-size: 18px;
+                }
+            }
+            .error {
+                margin: 3px 0;
+                background: #ffebeb;
+                color: #e4393c;
+                border: 1px solid #faccc6;
+                line-height: 20px;
+                height: 20px;
+                font-size: 12px;
+                //              display: none;
+                visibility: hidden;
+                .i_error {
+                    display: block;
+                    float: left;
+                    height: 16px;
+                    width: 16px;
+                    margin: 1px 12px;
+                    background: url(../css/img/pwd-icons-new.png) -104px -49px no-repeat;
+                    //                  vertical-align: middle;
+                }
+                span {
+                    display: block;
+                    float: left;
+                    height: 16px;
+                    width: auto;
+                    line-height: 16px;
+                    margin: 1px;
+                }
+            }
+            .content {
+                padding: 0 20px 20px;
+                .inp_box {
+                    height: 40px;
+                    border: 1px solid #bdbdbd;
+                    margin-bottom: 20px;
+                }
+                p {
+                    position: relative;
+                    .clear {
+                        position: absolute;
+                        top: 12px;
+                        right: 6px;
+                        display: none;
+                        height: 14px;
+                        width: 14px;
+                        background: url(../css/img/pwd-icons-new.png) -25px -143px no-repeat;
+                        cursor: pointer;
+                    }
+                    label {
+                        display: block;
+                        float: left;
+                        height: 38px;
+                        width: 39px;
+                        border-right: 1px solid #bdbdbd;
+                        background: url(../css/img/pwd-icons-new.png) no-repeat;
+                    }
+                    input {
+                        display: block;
+                        float: left;
+                        height: 38px;
+                        width: 265px;
+                        padding: 10px 0 10px 16px;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+                .forget {
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                    text-align: right;
+                    a {
+                        color: #666;
+                    }
+                }
+                #btn {
+                    border: 1px solid #e85356;
+                    display: block;
+                    width: 302px;
+                    background: #e4393c;
+                    height: 31px;
+                    line-height: 31px;
+                    color: #fff;
+                    font-size: 20px;
+                    font-family: 'Microsoft YaHei';
+                    cursor: pointer;
+                }
+                .psw {
+                    background-position: -48px 0;
+                }
+                .focus {
+                    background-position-y: -48px;
+                }
+                .error_p {
+                    border-color: #e4393c;
+                    >label {
+                        background-position-y: -96px;
+                        border-color: #e4393c;
+                    }
+                }
+            }
+            .register {
+                padding-right: 20px;
+                line-height: 50px;
+                border-top: 1px solid #f4f4f4;
+                height: auto;
+                background-color: #fcfcfc;
+                text-align: right;
+                a {
+                    color: #b61d1d;
+                    font-size: 14px;
+                    line-height: 16px;
+                    vertical-align: middle;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    i {
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        overflow: hidden;
+                        background: url(../css/img/pwd-icons-new.png) -104px -75px no-repeat;
+                        margin-right: 5px;
+                        vertical-align: middle;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#verify {
+    position: absolute;
+    left: 21px;
+    top: 46px;
+    height: 222px;
+    width: 304px;
+    background: #fff;
+    box-shadow: 0 0 2px 2px #eee;
+    border: 1px solid #eee;
+    padding: 18px 12px;
+    display: none;
+    .close {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-image: url(../css/img/close.png);
+    }
+    .img_box {
+        height: 100%;
+        width: 100%;
+        .ver_title {
+            margin-right: 15px;
+            height: 25px;
+            .var_tips {
+                float: left;
+                font-size: 14px;
+                width: 50%;
+                color: #666;
+            }
+        }
+        img {
+            height: 108px;
+            width: 278px;
+            margin-bottom: 10px;
+        }
+    }
+    .strip {
+        position: relative;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        visibility: visible;
+        opacity: 1;
+        color: #10b2fa;
+        background: #F5FAFF;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        #lump {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            margin-top: -6px;
+            margin-left: -6px;
+            width: 55px;
+            height: 55px;
+            border-radius: 40px;
+            cursor: pointer;
+            background: url(../css/img/jd-slide-btn2.png);
+        }
+        .strip_bg {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            height: 40px;
+            width: 0px;
+            background: #42C2FC;
+        }
+    }
+    #refresh {
+        float: right;
+        width: 40%;
+        .txt {
+            color: #06c;
+            float: right;
+            cursor: pointer;
+        }
+        .icon {
+            float: right;
+            width: 20px;
+            height: 20px;
+            float: right;
+            background: url(../css/img/refresh.png) center center no-repeat;
+            cursor: pointer;
+        }
+    }
+}
+
+#img {
+    position: relative;
+    .fixation,
+    .move {
+        position: absolute;
+        height: 38px;
+        width: 38px;
+    }
+    .fixation {
+        background: #fff;
+    }
+    .move {
+        border: 2px solid gainsboro;
+        left: 0px;
+        background-size: 278px 108px;
+        background-repeat: no-repeat;
+    }
+}
+
+#foot {
+    margin-top: 20px;
+    height: 86px;
+    .foot {
+        .links {
+            text-align: center;
+            font-size: 12px;
+            a {
+                color: #666;
+                margin: 0 10px;
+                &:hover {
+                    color: #E4393C;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .copyright {
+            margin: 10px 0;
+            font-size: 12px;
+            color: #666;
+        }
+    }
+}
+
+.con {
+    width: 990px;
+    margin: 0 auto;
+}
